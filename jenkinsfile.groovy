@@ -1,5 +1,5 @@
 node{
-    properties([parameters([string(defaultValue: 'IP', description: 'Where to build e.g IP', name: 'ENV', trim: true)])])
+    properties([parameters([string(defaultValue: 'IP', description: 'build IP', name: 'ENV', trim: true)])])
     stage("Clone repo"){
         git 'https://github.com/ainsfa20182018/stormpath-python.git'
      }
